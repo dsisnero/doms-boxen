@@ -1,0 +1,26 @@
+boxen::personal::osx_apps:
+  - adium
+  - alfred
+  - calibre
+  - gimp
+  - google-chrome
+  - google-drive
+  - inkscape
+  - iterm2
+  - plex-media-server
+  - sketchup
+  - skitch
+  - vagrant
+  - virtualbox
+  - vlc
+  
+
+boxen::personal::homebrew_packages:
+  - faad2
+  - ffmpeg
+  - graphviz  
+  - htop
+  - imagemagick
+  - lame
+  - pstree
+  
