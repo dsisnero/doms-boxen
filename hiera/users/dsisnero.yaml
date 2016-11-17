@@ -23,4 +23,7 @@ boxen::personal::homebrew_packages:
   - imagemagick
   - lame
   - pstree
+  - node
+  - yarn
+
   
