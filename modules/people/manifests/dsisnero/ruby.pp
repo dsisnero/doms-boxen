@@ -2,6 +2,8 @@ class people::dsisnero::ruby {
 
   require 'ruby::global'
 
+ 
+
   validate_re($ruby::global::version, '^\S+')
 
   # ruby::version { '1.9.3-p547': }
@@ -14,6 +16,11 @@ class people::dsisnero::ruby {
 
   ruby_gem { "oga for ${ruby::global::version}":
     gem => 'oga',
+    ruby_version => $ruby::global::version
+  }
+
+  ruby_gem { "pry for ${ruby::global::version}":
+    gem => 'pry',
     ruby_version => $ruby::global::version
   }
   
@@ -34,4 +41,11 @@ class people::dsisnero::ruby {
     ruby_version => $ruby::global::version,
   }
 
+  ruby_gem { "tk for ${ruby::global::version}":
+    gem => 'tk',
+    ruby_version => $ruby::global::version,
+    require => Package['homebrew/dupes/tcl-tk'],
   }
+
+  }
+  

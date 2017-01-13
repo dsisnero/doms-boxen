@@ -1,5 +1,12 @@
 class people::dsisnero {
 
+  homebrew::tap{ 'homebrew/dupes':}
+
+  package { 'homebrew/dupes/tcl-tk':
+    require => Homebrew::Tap['homebrew/dupes']
+  }
+  
+
   git::config::global {
     'alias.co': value => 'checkout';
     'core.editor': value => 'emacs';
