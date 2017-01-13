@@ -9,12 +9,15 @@
 # heart's content.
 
 # See https://github.com/boxen/puppet-ruby for docs
-ruby::global::version: "2.3.1"
+ruby::global::version: "2.4.0"
+
+ruby::version: "2.3.1"
+ruby::version: "mruby-dev"
 ruby::build::ensure: 'mruby-dev'
-ruby::build::ensure: "v20151024"
+ruby::build::ensure: "v20170112"
 ruby::rbenv_plugins:
   rbenv-vars:
-    ensure: v1.0.0
+    ensure: v1.2.0
     source: sstephenson/rbenv-vars
 ruby::version::alias:
   2.0.0: 2.0.0-p647
