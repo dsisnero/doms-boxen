@@ -19,6 +19,7 @@ boxen::personal::homebrew_packages:
   - aria2
   - faad2
   - ffmpeg
+  - go
   - graphviz  
   - htop
   - imagemagick
@@ -26,5 +27,4 @@ boxen::personal::homebrew_packages:
   - pstree
   - node
   - yarn
-
   
