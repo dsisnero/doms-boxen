@@ -2,7 +2,7 @@ class people::dsisnero::ruby {
 
   require 'ruby::global'
 
- 
+  ruby::version { '2.2.6':}
 
   validate_re($ruby::global::version, '^\S+')
 
