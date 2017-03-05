@@ -8,6 +8,7 @@ boxen::personal::osx_apps:
   - inkscape
   - iterm2
   - plex-media-server
+  - protege
   - shoes
   - sketchup
   - skitch
@@ -27,5 +28,6 @@ boxen::personal::homebrew_packages:
   - lame
   - pstree
   - node
+  - sqlite3
   - yarn
   
