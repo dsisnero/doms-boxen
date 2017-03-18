@@ -24,8 +24,15 @@ class people::dsisnero {
   }
 
 
+  repository {
+    "/Users/${::boxen_user}/.hoe_template":
+      source => 'dsisnero/.hoe_template'
+  }
+  
+
+
   include people::dsisnero::ruby
   
 
-  }
-  
+}
+
